@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Document</title>
+          <link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">
+           <script src="https://kit.fontawesome.com/d868f4cf6e.js" crossorigin="anonymous"></script>
+           <link href="https://fonts.googleapis.com/css?family=Spartan|Squada+One&display=swap" rel="stylesheet">
+
+           <link rel="stylesheet" href="style.css">
+</head> 
+<body>
+          <div class="container" id="travel">
+              <div class="nav-bar">
+                  <div class="logo">
+                      <img src="logo.png" alt="">
+                  </div>
+                  <div class="side-bar">
+                    <i class="fas fa-bars"></i>
+                  </div>
+                  <div class="sid">
+                      <div class="small-nav">
+                        <div class="ic1">
+                            <i class="fas fa-times" id="cross"></i>
+                        </div>  
+                        <div class="ic1" >
+                            <i class="fas fa-search"id="search" ></i>
+                        </div>  
+                        <input type="text" placeholder="Search..." id="input">
+                        <i class="fas fa-times" id="cross1"></i>
+                      </div>
+                      <ul>
+                          <li class="li1" >HOME
+                          <ul class="li1-1">
+                              <li>-Arcitechture</li>
+                              <li>- Slider full Width</li>
+                          </ul>
+                        </li>
+                          <li>ABOUT</li>
+                          <li class="li2">BLOG
+                          <ul class="li2-2">
+                              <li >blog time line</li>
+                              <li>Blog background</li>
+                          </ul>
+                        </li>
+                          <li class="li3" >PORTFOLIO
+                          <ul class="li3-3">
+                              <li>Portfolio time line </li>
+                              <li>Portfolio 3 columns</li>
+                          </ul>
+                        </li>
+                          <li>CONTACT</li>
+                      </ul>
+                      <div class="links">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-google"></i>
+                        <i class="fab fa-pinterest"></i>
+                        <i class="fab fa-instagram"></i>
+                      </div>
+                  </div>
+              </div>
+              <div class="body ">
+                  <div class="b">
+                  <h1 class="h11">Pure</h1><span ><h1>Elegance</h1></span>
+                </div>
+                <div id="anim">
+                    <h2>AWSOME THEME</h2>
+                </div>
+              </div> 
+          </div>
+          <div class="container1">
+            <div class="text">
+              <h1>HISTORY OF AGENCY</h1>
+              <hr class="hr">
+              <h3>WHO LOVES OR PURSUES OR DESIRES TO OBTAIN PAIN OF<br>
+                ITSELF, BUT BECAUSE OCCASIONALLY CIRCUMSTANCES<br>
+                OCCUR AND PAIN CAN PROCURE HIM SOME GREAT<br>
+                 PLEASURE</h3>
+                 <p>Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci,<br>
+                  sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam<br>
+                  aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem <br>
+                  ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora<br>
+                  incidunt ut labore.</p>
+            </div>
+            <div class="img-slider">
+              <ul class="slides">
+            <li class="slidee"><img src="about_img.jpg"/></li>
+                <li class="slidee"><img src="about_img2.jpg"/></li>
+                <li class="slidee"><img src="about_img3.jpg"/></li>
+              </ul>
+            </div>
+          </div>
+          <div class="container2">
+            <h1 >WHY &nbsp  CHOOSE &nbsp  US?</h1>
+            <hr class="hr">
+            <h2>Except to obtain some advantage from it</h2>
+            <div class="grid">
+              <div class="gc">
+                <i class="fas fa-pencil-alt"></i>
+                <hr class="h22">
+                <h2>Branding</h2>
+                <p>Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.</p>
+              </div>
+              <div class="gc">
+                <i class="fas fa-globe-americas"></i>
+                <hr class="h22">
+
+                <h2>Plan of Work</h2>
+                <p>Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.</p>
+              </div>
+              <div class="gc">
+                <i class="fas fa-brush"></i>
+                <hr class="h22">
+                <h2>ILUSTRATION</h2>
+                <p>Expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because procure him.</p>
+              </div>
+              </div>
+            </div>
+            <div class="upper"><a href="#travel"><i class="fas fa-chevron-up"></i></a>
+        
+            </div>
+          <script src="./jquery-3.4.1.min.js"></script>
+<script>
+         var side_bar =document.getElementsByClassName('side-bar')[0];
+         var sid =document.getElementsByClassName('sid')[0];
+         side_bar.addEventListener('click',function(){
+           sid.style.position="absolute";
+           sid.style.transition="all 1s";
+           sid.style.right="0";
+         })
+         var cross = document.getElementById("cross");
+                    cross.addEventListener('click' ,function()
+                    {
+                     sid.style.position="absolute";
+                     sid.style.transition="all 1s";
+                     sid.style.right="-30%";
+                    });
+                    var search=document.getElementById('search');
+                    var input=document.getElementById('input');
+                    var cross1=document.getElementById('cross1');
+                    search.addEventListener('click', function(){
+                      input.style.visibility="visible";
+                      cross1.style.visibility="visible";
+                      search.style.visibility="hidden";
+                    })
+                    cross1.addEventListener('click',function(){
+                      search.style.visibility="visible";
+                      cross1.style.visibility="hidden";
+                      input.style.visibility="hidden";
+                    })
+                    $(function() {
+
+//settings for slider
+var width = 600;
+var animationSpeed = 1000;
+var pause = 3000;
+var currentSlide = 1;
+//cache DOM elements
+var img_slider = $('.img-slider');
+var slideContainer = $('.slides');
+var slides = $('.slidee');
+var interval;
+function startSlider() {
+    interval = setInterval(function() {
+        slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function() {
+            if (++currentSlide== slides.length) {
+                currentSlide = 1;
+                slideContainer.css('margin-left', 0);
+            }
+        });
+    },pause);
+}
+startSlider();
+
+});
+
+
+
+
+</script>
+</body>
+</head>
